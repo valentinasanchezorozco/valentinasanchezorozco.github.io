@@ -1,0 +1,685 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Valentina Sánchez Orozco</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Portfolio of Valentina Sánchez Orozco: applied linguist and bilingual education leader. Curriculum design, teacher training, AI in language teaching, research and social impact.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+<style>
+/* Layout: a teacher's working file — sticky tab bar, wide hero, project "case files" each with a contact strip of document excerpts. */
+:root{
+  --ink:#16233b; --paper:#f6f7fa; --card:#ffffff; --line:#d9dee8; --muted:#5a6579;
+  --accent:#d99a00;   /* guayacán yellow */
+  --accent-ink:#7a5600;
+  --teal:#0f6b6b;
+  --chip:#eef1f6;
+  --font-display:"Bricolage Grotesque", "Avenir Next", "Segoe UI", system-ui, sans-serif;
+  --font-body:"Instrument Sans", "Helvetica Neue", Arial, system-ui, sans-serif;
+  --shadow:0 1px 2px rgba(22,35,59,.06), 0 8px 24px rgba(22,35,59,.06);
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --ink:#e8ecf4; --paper:#0f1522; --card:#161f30; --line:#2a3550; --muted:#9aa6bd;
+  --accent:#f2b72e; --accent-ink:#f6cf6a; --teal:#4fc0b8; --chip:#1d2840;
+  --shadow:0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.25); color-scheme:dark}}
+:root[data-theme="dark"]{
+  --ink:#e8ecf4; --paper:#0f1522; --card:#161f30; --line:#2a3550; --muted:#9aa6bd;
+  --accent:#f2b72e; --accent-ink:#f6cf6a; --teal:#4fc0b8; --chip:#1d2840;
+  --shadow:0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.25); color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{background:var(--paper);color:var(--ink);font-family:var(--font-body);font-size:17px;line-height:1.6}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--card)}
+.wrap{max-width:1120px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--font-display);line-height:1.1;text-wrap:balance;margin:0}
+h2{font-size:clamp(1.8rem,3.4vw,2.6rem);font-weight:800;letter-spacing:-.01em}
+h3{font-size:1.35rem;font-weight:700}
+p{margin:0}
+a{color:var(--teal)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:6px}
+.eyebrow{font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;font-weight:600;color:var(--muted)}
+
+/* nav */
+header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--card) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header.top .wrap{display:flex;align-items:center;gap:16px;min-height:60px;flex-wrap:wrap;padding-block:8px}
+.brand{font-family:var(--font-display);font-weight:800;font-size:1.15rem;text-decoration:none;color:var(--ink);margin-right:auto}
+.brand span{color:var(--accent-ink)}
+nav{display:flex;gap:4px;flex-wrap:wrap}
+nav a{text-decoration:none;color:var(--ink);font-weight:500;font-size:.95rem;padding:6px 10px;border-radius:999px}
+nav a:hover{background:var(--chip)}
+
+/* hero */
+.hero{padding-block:56px 40px}
+.hero-grid{display:grid;grid-template-columns:1.35fr 1fr;gap:48px;align-items:center}
+.hero h1{font-size:clamp(2.3rem,5.4vw,4rem);font-weight:800;letter-spacing:-.02em}
+.hero h1 .hl{background:linear-gradient(transparent 62%,color-mix(in srgb,var(--accent) 45%,transparent) 0)}
+.hero .lede{font-size:1.2rem;color:var(--muted);margin-top:18px;max-width:34ch}
+.spec{margin:22px 0 0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:8px}
+.spec li{background:var(--chip);border:1px solid var(--line);padding:6px 12px;border-radius:999px;font-size:.92rem;font-weight:500}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 18px;border-radius:10px;font-weight:600;text-decoration:none;border:1px solid var(--ink);color:var(--ink);background:transparent;font-size:1rem;cursor:pointer;font-family:inherit}
+.btn.primary{background:var(--ink);color:var(--paper)}
+.portrait{position:relative;justify-self:center;width:min(100%,380px)}
+.portrait img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 12%;border-radius:200px 200px 18px 18px;background:var(--chip)}
+.portrait .tag{position:absolute;left:-14px;bottom:28px;background:var(--card);border:1px solid var(--line);box-shadow:var(--shadow);border-radius:12px;padding:10px 14px;font-size:.88rem;max-width:230px}
+.portrait .tag b{display:block;font-family:var(--font-display);font-size:1.05rem}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:44px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.stats div{padding:18px 16px;border-left:1px solid var(--line)}
+.stats div:first-child{border-left:0;padding-left:0}
+.stats b{display:block;font-family:var(--font-display);font-size:2rem;font-weight:800;font-variant-numeric:tabular-nums}
+.stats span{color:var(--muted);font-size:.92rem}
+
+section{padding-block:64px}
+.sec-head{display:grid;gap:10px;margin-bottom:30px;max-width:70ch}
+.sec-head p{color:var(--muted)}
+
+/* note on samples */
+.note{display:grid;grid-template-columns:auto 1fr;gap:18px;background:var(--card);border:1px solid var(--line);border-left:6px solid var(--accent);border-radius:14px;padding:20px 22px;max-width:900px}
+.note svg{width:28px;height:28px;color:var(--accent-ink)}
+.note h3{font-size:1.1rem;margin-bottom:6px}
+.note p{color:var(--muted);font-size:.98rem}
+.note p + p{margin-top:8px}
+
+/* project index */
+.index{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:40px}
+.index a{display:grid;gap:4px;text-decoration:none;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.index a:hover{border-color:var(--accent)}
+.index small{color:var(--muted)}
+.index b{font-family:var(--font-display);font-size:1.05rem}
+
+/* project case file */
+.project{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:28px;margin-bottom:26px;box-shadow:var(--shadow);scroll-margin-top:90px}
+.project-top{display:grid;grid-template-columns:1fr 280px;gap:32px}
+.project-top > div{min-width:0}
+.meta{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:.9rem;color:var(--muted);margin:8px 0 14px}
+.meta span::before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--accent);margin-right:7px;vertical-align:middle}
+.project p.sum{max-width:65ch}
+.did{margin:14px 0 0;padding-left:20px}
+.did li{margin:4px 0}
+.facts{display:grid;gap:10px;align-content:start}
+.fact{background:var(--chip);border-radius:12px;padding:12px 14px}
+.fact b{display:block;font-family:var(--font-display);font-size:1.5rem;font-variant-numeric:tabular-nums}
+.fact span{font-size:.88rem;color:var(--muted)}
+.strip{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:12px;margin-top:22px}
+.shot{margin:0;display:grid;gap:6px}
+.shot button{padding:0;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:#fff;cursor:zoom-in;display:block;width:100%}
+.shot img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;object-position:top}
+.shot figcaption{font-size:.84rem;color:var(--muted);line-height:1.35}
+.badge{display:inline-block;font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;font-weight:700;color:var(--accent-ink);background:color-mix(in srgb,var(--accent) 18%,transparent);padding:3px 8px;border-radius:6px}
+
+/* about */
+.about{display:grid;grid-template-columns:340px 1fr;gap:44px;align-items:start}
+.about img{width:100%;border-radius:18px;aspect-ratio:3/4;object-fit:cover;object-position:50% 15%}
+.about .text{display:grid;gap:14px;max-width:65ch;min-width:0}
+.about .text p{font-size:1.06rem}
+.pull{font-family:var(--font-display);font-size:1.45rem;font-weight:700;line-height:1.25;border-left:4px solid var(--accent);padding-left:16px}
+
+.affil{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-top:6px}
+.affil img{height:56px;width:auto;background:#fff;border-radius:8px;padding:6px 10px;border:1px solid var(--line)}
+.logo-inline{height:44px;width:auto;background:#fff;border-radius:8px;padding:4px 8px;border:1px solid var(--line);margin-top:12px}
+.trips{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:28px}
+.trips figure{margin:0;display:grid;gap:6px}
+.trips img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:12px}
+.trips figcaption{font-size:.85rem;color:var(--muted)}
+@media (max-width:900px){.trips{grid-template-columns:repeat(2,1fr)}}
+.unicor{display:grid;grid-template-columns:minmax(0,1.1fr) 1fr;gap:36px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:28px}
+.unicor > div{min-width:0}
+.unicor-media{display:grid;gap:12px;min-width:0}
+.unicor-photo{width:100%;border-radius:12px;aspect-ratio:4/3;object-fit:cover}
+.unicor-logo{width:220px;max-width:100%;background:#fff;border-radius:10px;padding:8px 10px;border:1px solid var(--line)}
+@media (max-width:800px){.unicor{grid-template-columns:1fr}}
+.rw{display:grid;grid-template-columns:1fr 1.3fr;gap:28px;margin-top:16px;align-items:start}
+.rw > div{min-width:0}
+.rw-text{display:grid;gap:12px;max-width:60ch}
+.book-card{display:grid;gap:4px;border:1px solid var(--line);border-left:6px solid var(--accent);border-radius:12px;padding:16px;background:var(--card)}
+.book-card b{font-family:var(--font-display);font-size:1.3rem}
+.book-card span:last-child{color:var(--muted);font-size:.9rem}
+.rw-photos{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.rw-photos img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:12px}
+@media (max-width:900px){.rw{grid-template-columns:1fr}.rw-photos{grid-template-columns:repeat(2,1fr)}}
+.areas a span{color:var(--muted);font-size:.85rem}
+.areas{grid-template-columns:repeat(4,1fr)}
+@media (max-width:900px){.areas{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.areas{grid-template-columns:1fr}}
+.items li{margin:10px 0}
+.org{display:inline-block;font-size:.8rem;color:var(--accent-ink);background:color-mix(in srgb,var(--accent) 14%,transparent);padding:1px 8px;border-radius:6px;margin-left:4px}
+/* nonprofit */
+.np{background:var(--ink);color:var(--paper)}
+.np .sec-head p,.np .muted{color:color-mix(in srgb,var(--paper) 75%,transparent)}
+.np-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:start}
+.np-grid > div{min-width:0}
+.np-logo{width:120px;border-radius:14px;background:#fff;padding:6px}
+.mv{display:grid;gap:14px;margin-top:18px}
+.mv div{border:1px solid color-mix(in srgb,var(--paper) 25%,transparent);border-radius:12px;padding:14px 16px}
+.mv b{font-family:var(--font-display);color:var(--accent)}
+.cards{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-top:28px}
+.cards img{width:100%;border-radius:10px;background:#fff}
+.np .strip .shot button{border-color:transparent}
+.np .shot figcaption{color:color-mix(in srgb,var(--paper) 70%,transparent)}
+.photos2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.photos2 img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:12px}
+
+/* testimonials */
+.quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+blockquote{margin:0;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px;display:grid;gap:16px;align-content:space-between}
+blockquote p{font-size:1.02rem}
+blockquote p::before{content:"“";font-family:var(--font-display);font-size:2.6rem;line-height:0;color:var(--accent);vertical-align:-.45em;margin-right:4px}
+blockquote footer{font-size:.9rem;color:var(--muted)}
+blockquote footer b{color:var(--ink);display:block}
+
+/* resume */
+.resume{display:grid;grid-template-columns:1.5fr 1fr;gap:40px}
+.resume > div{min-width:0}
+.tl{list-style:none;margin:0;padding:0;display:grid;gap:0}
+.tl li{display:grid;grid-template-columns:130px 1fr;gap:16px;padding:14px 0;border-top:1px solid var(--line)}
+.tl time{font-size:.85rem;color:var(--muted);font-variant-numeric:tabular-nums;padding-top:3px}
+.tl b{display:block}
+.tl span{color:var(--muted);font-size:.94rem}
+.side{display:grid;gap:26px;align-content:start}
+.side h3{font-size:1.1rem;margin-bottom:8px}
+.side ul{margin:0;padding-left:18px}
+.side li{margin:3px 0;font-size:.95rem}
+
+/* gallery */
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.gallery figure{margin:0;display:grid;gap:6px}
+.gallery img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:12px}
+.gallery.g3{grid-template-columns:repeat(3,1fr)}
+@media (max-width:560px){.gallery.g3{grid-template-columns:repeat(2,1fr)}}
+.gallery figcaption{font-size:.85rem;color:var(--muted)}
+
+/* contact */
+.contact{display:grid;grid-template-columns:1.2fr 1fr;gap:30px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:32px}
+.contact > div{min-width:0}
+.c-row{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:12px}
+.c-row code{font-family:var(--font-body);font-size:1.05rem;background:var(--chip);padding:8px 12px;border-radius:8px;user-select:all;overflow-wrap:anywhere}
+.small{font-size:.85rem;color:var(--muted)}
+footer.site{padding-block:30px;color:var(--muted);font-size:.88rem;border-top:1px solid var(--line)}
+
+/* lightbox */
+dialog{border:0;padding:0;background:transparent;max-width:min(1100px,94vw);max-height:92vh}
+dialog::backdrop{background:rgba(10,15,25,.82)}
+dialog img{display:block;max-width:100%;max-height:82vh;border-radius:10px;background:#fff}
+dialog p{color:#fff;margin-top:10px;font-size:.95rem}
+dialog .x{position:absolute;top:8px;right:8px;background:#fff;color:#16233b;border:0;border-radius:999px;width:36px;height:36px;font-size:20px;cursor:pointer}
+
+@media (max-width:900px){
+  .hero-grid,.project-top,.about,.np-grid,.resume,.contact{grid-template-columns:1fr}
+  .index,.quotes{grid-template-columns:1fr 1fr}
+  .gallery{grid-template-columns:repeat(2,1fr)}
+  .cards{grid-template-columns:repeat(3,1fr)}
+  .about img{max-width:340px}
+  .facts{grid-template-columns:repeat(3,1fr)}
+}
+@media (max-width:560px){
+  body{font-size:16px}
+  .stats{grid-template-columns:1fr 1fr}
+  .stats div:nth-child(3){border-left:0;padding-left:0}
+  .stats div{border-top:1px solid var(--line)}
+  .index,.quotes{grid-template-columns:1fr}
+  .facts{grid-template-columns:1fr}
+  .project{padding:20px}
+  .tl li{grid-template-columns:1fr;gap:2px}
+  .portrait .tag{left:8px}
+  nav a{padding:6px 8px;font-size:.88rem}
+}
+</style>
+<meta property="og:title" content="Valentina Sánchez Orozco">
+<meta property="og:image" content="ph-headshot-new.jpg">
+</head>
+<body>
+
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#home">Valentina <span>Sánchez Orozco</span></a>
+    <nav aria-label="Main">
+      <a href="#portfolio">Portfolio</a>
+      <a href="#about">About</a>
+      <a href="#testimonials">Reviews</a>
+      <a href="#empowerthem">EmpowerThem</a>
+      <a href="#resume">Resume</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<!-- HERO -->
+<div class="wrap hero" id="home">
+  <div class="hero-grid">
+    <div>
+      <p class="eyebrow">First-generation Latina · Chevening Scholar</p>
+      <h1>I'm a <span class="hl">Bilingual Education &amp; Academic Program Leader</span></h1>
+      <p class="lede">I help teachers and programs make English a life skill, not just a subject. I specialize in:</p>
+      <ul class="spec" aria-label="Specialties">
+        <li>Curriculum design</li>
+        <li>Teacher development &amp; coaching</li>
+        <li>AI in education</li>
+        <li>Academic program management</li>
+        <li>Bilingual education policy</li>
+        <li>Qualitative research</li>
+        <li>Community leadership</li>
+      </ul>
+      <div class="cta">
+        <a class="btn primary" href="#portfolio">See my work</a>
+        <a class="btn" href="#contact">Let's connect</a>
+      </div>
+    </div>
+    <div class="portrait">
+      <img src="ph-headshot-new.jpg" alt="Portrait of Valentina Sánchez Orozco">
+      <div class="tag"><b>MA with Distinction</b>Applied Linguistics for Language Teaching, University of York</div>
+    </div>
+  </div>
+  <div class="stats" role="list">
+    <div role="listitem"><b>15,000</b><span>4th and 5th graders reached by the Barranquilla bilingual strategy</span></div>
+    <div role="listitem"><b>88</b><span>educators coached: 8 lead teachers and 80 tutors</span></div>
+    <div role="listitem"><b>200+</b><span>public-sector officials taught online with the British Council</span></div>
+    <div role="listitem"><b>7 yrs</b><span>in education since 2019, 4+ since graduating in 2022</span></div>
+  </div>
+</div>
+
+<!-- PORTFOLIO -->
+<section id="portfolio">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Portfolio · Areas of expertise</p>
+      <h2>Where my expertise spans</h2>
+      <p>7 years in education, from my first teaching role in Boston in 2019, and 4+ years of professional practice since graduating in 2022. My work falls into four areas.</p>
+    </div>
+    <div class="index areas">
+      <a href="#area-leadership"><small>Area 1</small><b>Leadership &amp; Program Management</b><span>Teams of 4–88 · district-wide programs · cohort operations</span></a>
+      <a href="#area-curriculum"><small>Area 2</small><b>Curriculum &amp; Instructional Design</b><span>CEFR curricula · syllabi · lesson design · research</span></a>
+      <a href="#area-coaching"><small>Area 3</small><b>Instructional Coaching &amp; Teacher Development</b><span>2+ years coaching · feedback cycles · workshops · LMS</span></a>
+      <a href="#area-ai"><small>Area 4</small><b>AI in Education</b><span>Frameworks · ethics · instructor communities</span></a>
+    </div>
+
+    <aside class="note" aria-labelledby="why-title">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 4v5"/></svg>
+      <div>
+        <h3 id="why-title">Why you'll see excerpts, not full documents</h3>
+        <p>Many of these materials were created for organizations I worked with, including the British Council, the Barranquilla Secretariat of Education, Generation Colombia and Universidad de Córdoba. The documents belong to those programs, so I share short excerpts to show my approach and the quality of the work. Logos are removed.</p>
+        <p>Some materials also include names of students, tutors and schools. Excerpts keep that information private. Full samples are available on request where the organization allows it.</p>
+      </div>
+    </aside>
+
+    <article class="project" id="area-leadership">
+      <div class="project-top">
+        <div>
+          <span class="badge">Area 1 · Leadership</span>
+          <h3 style="margin-top:10px">Leadership &amp; Program Management</h3>
+          <p class="sum" style="margin-top:10px">I lead teams and programs where policy meets the classroom: planning, coordinating people across organizations, tracking results and making sure quality holds at scale.</p>
+          <ul class="did items">
+            <li><b>Barranquilla bilingual strategy</b> <span class="org">British Council · Barranquilla Secretariat of Education · 2026</span><br>Led the academic implementation of the district-wide strategy for 15,000 4th and 5th graders in public schools; managed 88 educators, tracked KPIs and reported to the British Council and the District.</li>
+            <li><b>Curriculum &amp; Instruction operations</b> <span class="org">Generation Colombia · 2026 – present</span><br>Lead a team of instructional coaches and supervise an associate. Built a master checklist that turns the program calendar into dated tasks for every cohort, with alerts, owners and a weekly routine; planned the 2027 calendar for 7 cohorts.</li>
+            <li><b>Team leadership</b> <span class="org">Boston English Experience · York College · Jumpstart Boston</span><br>Recruited, led and mentored teaching teams, and co-led pedagogical coordination of multi-level adult programs.</li>
+            <li><b>Community leadership</b> <span class="org">EmpowerThem Foundation · Fundación Resiliente Colombia</span><br>Founded and lead a grassroots foundation for youth and women; earlier co-founded and managed logistics for humanitarian and cultural programs.</li>
+          </ul>
+        </div>
+        <div class="facts">
+          <div class="fact"><b>15,000</b><span>students reached</span></div>
+          <div class="fact"><b>88</b><span>educators managed</span></div>
+          <div class="fact"><b>7</b><span>cohorts planned for 2027</span></div>
+        </div>
+      </div>
+      <div class="strip">
+        <figure class="shot"><button data-full="gk-curriculo.jpg" data-cap="Curriculum launch session for lead teachers (title slide)."><img src="gk-curriculo.jpg" alt="Curriculum launch for lead teachers" loading="lazy"></button><figcaption>Curriculum launch for lead teachers</figcaption></figure>
+        <figure class="shot"><button data-full="co-analisis.jpg" data-cap="Analysis of tutors' lesson-plan reflections: findings and recommendations."><img src="co-analisis.jpg" alt="Program analysis &amp; recommendations" loading="lazy"></button><figcaption>Program analysis &amp; recommendations</figcaption></figure>
+        <figure class="shot"><button data-full="gen-check1.jpg" data-cap="Master checklist: “Today's tasks” dashboard across all programs. Recreated excerpt; internal links and partner names removed."><img src="gen-check1.jpg" alt="Checklist: today's tasks dashboard" loading="lazy"></button><figcaption>Checklist: today's tasks dashboard</figcaption></figure>
+        <figure class="shot"><button data-full="gen-check3.jpg" data-cap="Task template: every task anchored to a cohort milestone with lead time, frequency and owner. Recreated excerpt."><img src="gen-check3.jpg" alt="Milestone-based task template" loading="lazy"></button><figcaption>Milestone-based task template</figcaption></figure>
+        <figure class="shot"><button data-full="gen-check2.jpg" data-cap="2027 cohort calendar that feeds every date in the checklist. Recreated excerpt."><img src="gen-check2.jpg" alt="2027 cohort calendar" loading="lazy"></button><figcaption>2027 cohort calendar</figcaption></figure>
+        <figure class="shot"><button data-full="gen-check4.jpg" data-cap="Daily and weekly routine with check-offs. Recreated excerpt."><img src="gen-check4.jpg" alt="Daily &amp; weekly routine" loading="lazy"></button><figcaption>Daily &amp; weekly routine</figcaption></figure>
+      </div>
+    </article>
+
+    <article class="project" id="area-curriculum">
+      <div class="project-top">
+        <div>
+          <span class="badge">Area 2 · Curriculum</span>
+          <h3 style="margin-top:10px">Curriculum &amp; Instructional Design</h3>
+          <p class="sum" style="margin-top:10px">I design curricula and materials that connect research with what actually happens in class, aligned to the CEFR and to learners' real goals.</p>
+          <ul class="did items">
+            <li><b>City English curriculum for primary</b> <span class="org">Glocal Kids · Barranquilla · 2026</span><br>Curriculum maps for 4th and 5th grade (CEFR A1.1–A2.1), a CEFR descriptor review and a standard lesson-plan template (I do – We do – You do).</li>
+            <li><b>Leadership and Professional Development for L2 Teachers</b> <span class="org">MA in English Teaching · Universidad de Córdoba</span><br>Module syllabus revised with Dr. Pedro P. Aguas, with AI-supported materials.</li>
+            <li><b>Schemes of work and business English</b> <span class="org">British Council · Coninglés</span><br>CEFR A1 schemes of work organized by theme, weeks and project work; a tailored business English curriculum for 100+ professionals.</li>
+            <li><b>Research that informs design</b> <span class="org">University of York · 2025</span><br>MA dissertation (Distinction band): a hermeneutic phenomenological study of international MA students in English-medium instruction.</li>
+          </ul>
+        </div>
+        <div class="facts">
+          <div class="fact"><b>A1.1 – A2.1</b><span>CEFR levels mapped</span></div>
+          <div class="fact"><b>100+</b><span>professionals in a tailored curriculum</span></div>
+          <div class="fact"><b>72</b><span>dissertation mark</span></div>
+        </div>
+      </div>
+      <div class="strip">
+        <figure class="shot"><button data-full="gk-malla.jpg" data-cap="Curriculum map, 4th grade, Unit 1: CEFR descriptors by skill, life skills and learning strategies."><img src="gk-malla.jpg" alt="Curriculum map, 4th grade" loading="lazy"></button><figcaption>Curriculum map, 4th grade</figcaption></figure>
+        <figure class="shot"><button data-full="gk-plan.jpg" data-cap="Lesson plan, 4th grade, Period 3: “Who we are”."><img src="gk-plan.jpg" alt="Lesson plan: “Who we are”" loading="lazy"></button><figcaption>Lesson plan: “Who we are”</figcaption></figure>
+        <figure class="shot"><button data-full="gk-descriptores.jpg" data-cap="CEFR descriptor review for 4th grade, adapted for the Barranquilla curriculum."><img src="gk-descriptores.jpg" alt="CEFR descriptor review" loading="lazy"></button><figcaption>CEFR descriptor review</figcaption></figure>
+        <figure class="shot"><button data-full="cu-syllabus.jpg" data-cap="Revised syllabus: Leadership and Professional Development for L2 Teachers (with Dr. Pedro P. Aguas)."><img src="cu-syllabus.jpg" alt="Revised module syllabus" loading="lazy"></button><figcaption>Revised module syllabus</figcaption></figure>
+        <figure class="shot"><button data-full="cu-sow.jpg" data-cap="Scheme of work, Level 2 (CEFR A1.1–A1.2), Unit 1: Me and My Family."><img src="cu-sow.jpg" alt="Scheme of work, CEFR A1" loading="lazy"></button><figcaption>Scheme of work, CEFR A1</figcaption></figure>
+        <figure class="shot"><button data-full="re-abstract.jpg" data-cap="MA dissertation abstract (University of York, 2025)."><img src="re-abstract.jpg" alt="Dissertation abstract" loading="lazy"></button><figcaption>Dissertation abstract</figcaption></figure>
+      </div>
+    </article>
+
+    <article class="project" id="area-coaching">
+      <div class="project-top">
+        <div>
+          <span class="badge">Area 3 · Coaching</span>
+          <h3 style="margin-top:10px">Instructional Coaching &amp; Teacher Development</h3>
+          <p class="sum" style="margin-top:10px">I have more than two years of experience as an instructional coach across several roles and organizations. <b>How I give feedback:</b> I follow a strengths-first coaching cycle. I observe the class (live or recorded), name what is working, agree on one or two growth areas, and co-design an action plan that we follow up in the next cycle.</p>
+          <ul class="did items">
+            <li><b>Coaching cycles at scale</b> <span class="org">British Council · Barranquilla · 2026</span><br>Coached 8 lead teachers and 80 tutors with class observations and structured written feedback on lesson plans.</li>
+            <li><b>Coaching rounds, onboarding and upskilling</b> <span class="org">Generation Colombia · 2026 – present</span><br>Coaching rounds with recording reviews, onboarding for new instructors and upskilling for returning ones.</li>
+            <li><b>Practical teacher workshops</b> <span class="org">Universidad de Córdoba · EmpowerThem</span><br>Micro-workshop on active coaching for Project-Based Learning and an introduction to descriptive phenomenology for novice researchers.</li>
+            <li><b>Teaching and support through LMS</b> <span class="org">British Council · Generation · Universidad de Córdoba</span><br>Courses and teacher support on Canvas, Moodle and Google Classroom, including online English for 200+ public officials.</li>
+          </ul>
+        </div>
+        <div class="facts">
+          <div class="fact"><b>2+ yrs</b><span>as an instructional coach</span></div>
+          <div class="fact"><b>88</b><span>educators coached in one program</span></div>
+          <div class="fact"><b>LMS</b><span>Canvas · Moodle · Google Classroom</span></div>
+        </div>
+      </div>
+      <div class="strip">
+        <figure class="shot"><button data-full="gk-observacion.jpg" data-cap="Class observation format with a 1–4 performance scale, used in coaching cycles."><img src="gk-observacion.jpg" alt="Observation format for coaching" loading="lazy"></button><figcaption>Observation format for coaching</figcaption></figure>
+        <figure class="shot"><button data-full="tr-abp.jpg" data-cap="Micro-workshop guide: active coaching for teachers in Project-Based Learning."><img src="tr-abp.jpg" alt="Coaching guide: Project-Based Learning" loading="lazy"></button><figcaption>Coaching guide: Project-Based Learning</figcaption></figure>
+        <figure class="shot"><button data-full="tr-fenomenologia.jpg" data-cap="Workshop on descriptive phenomenology for novice researchers."><img src="tr-fenomenologia.jpg" alt="Research workshop: phenomenology" loading="lazy"></button><figcaption>Research workshop: phenomenology</figcaption></figure>
+      </div>
+    </article>
+
+    <article class="project" id="area-ai">
+      <div class="project-top">
+        <div>
+          <span class="badge">Area 4 · AI in Education</span>
+          <h3 style="margin-top:10px">AI in Education</h3>
+          <p class="sum" style="margin-top:10px">I help teachers move from fear to confident, ethical use of AI, with clear frameworks for learners and instructors.</p>
+          <ul class="did items">
+            <li><b>Community of Practice: AI as an ally of adult learning</b> <span class="org">Generation Colombia · Oct 2026</span><br>Designed and led a 60-minute session for instructors with a “Me, AI, Me” framework, a traffic-light guide for AI in assignments and a protocol for AI use in no-AI tasks.</li>
+            <li><b>From Fear to Fluency</b> <span class="org">Interactive conference · 2025</span><br>Session for English teachers that names their fears about AI and answers them with research, plus an ethical-use rubric and a critical-thinking worksheet.</li>
+            <li><b>AI-supported teaching</b> <span class="org">University of York · York College · Universidad de Córdoba</span><br>Integrated AI tools to personalize learning and academic writing; scored 84 in Teaching &amp; Learning with Technology.</li>
+          </ul>
+        </div>
+        <div class="facts">
+          <div class="fact"><b>84</b><span>mark in Teaching &amp; Learning with Technology</span></div>
+          <div class="fact"><b>5</b><span>classroom-ready AI tools</span></div>
+        </div>
+      </div>
+      <div class="strip">
+        <figure class="shot"><button data-full="cop-01.jpg" data-cap="Community of Practice: AI as an ally of adult learning (October 2026)."><img src="cop-01.jpg" alt="Community of Practice on AI" loading="lazy"></button><figcaption>Community of Practice on AI</figcaption></figure>
+        <figure class="shot"><button data-full="cop-07.jpg" data-cap="The “Me, AI, Me” framework for learners."><img src="cop-07.jpg" alt="“Me, AI, Me” framework" loading="lazy"></button><figcaption>“Me, AI, Me” framework</figcaption></figure>
+        <figure class="shot"><button data-full="cop-08.jpg" data-cap="Traffic-light guide for AI use in assignments."><img src="cop-08.jpg" alt="AI traffic light for assignments" loading="lazy"></button><figcaption>AI traffic light for assignments</figcaption></figure>
+        <figure class="shot"><button data-full="cop-11.jpg" data-cap="Protocol: what to do when a learner submits AI work in a no-AI task."><img src="cop-11.jpg" alt="Instructor protocol" loading="lazy"></button><figcaption>Instructor protocol</figcaption></figure>
+        <figure class="shot"><button data-full="ai-slide1.jpg" data-cap="From Fear to Fluency: opening slide."><img src="ai-slide1.jpg" alt="From Fear to Fluency" loading="lazy"></button><figcaption>From Fear to Fluency</figcaption></figure>
+        <figure class="shot"><button data-full="ai-slide4.jpg" data-cap="Naming teachers' fears and answering them with research."><img src="ai-slide4.jpg" alt="What are we afraid of?" loading="lazy"></button><figcaption>What are we afraid of?</figcaption></figure>
+        <figure class="shot"><button data-full="ai-rubric.jpg" data-cap="Rubric for ethical and critical use of AI in ELT assignments."><img src="ai-rubric.jpg" alt="Ethical AI use rubric" loading="lazy"></button><figcaption>Ethical AI use rubric</figcaption></figure>
+        <figure class="shot"><button data-full="ai-worksheet.jpg" data-cap="Student worksheet: thinking critically about AI use."><img src="ai-worksheet.jpg" alt="Critical-thinking worksheet" loading="lazy"></button><figcaption>Critical-thinking worksheet</figcaption></figure>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- UNIVERSIDAD DE CORDOBA -->
+<section id="unicor">
+  <div class="wrap">
+    <div class="unicor">
+      <div class="unicor-media">
+        <img class="unicor-photo" src="unicor-group.jpg" alt="Valentina with faculty and colleagues at Universidad de Córdoba">
+        <img class="unicor-logo" src="logo-unicor.png" alt="Universidad de Córdoba logo">
+      </div>
+      <div>
+        <p class="eyebrow">Universidad de Córdoba</p>
+        <h2 style="margin-top:6px">Where I started, and where I give back</h2>
+        <ul class="did">
+          <li>B.A. in Foreign Language Teaching (English), 2017–2022. First-generation graduate and co-creator of the English program's first radio show.</li>
+          <li>Guest (part-time) lecturer for the Leadership and Professional Development for L2 Teachers module in the MA in English Teaching program. I write the course materials, including AI-supported resources, and revised the syllabus with Dr. Pedro P. Aguas.</li>
+          <li>I mentor students in the Master's in English Teaching as they finalize their theses.</li>
+          <li>Member of the Curricular Innovation and Educational Leadership Research Group.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" style="background:var(--card);border-block:1px solid var(--line)">
+  <div class="wrap about">
+    <img src="ph-diploma.jpg" alt="Valentina holding her MA degree certificate from the University of York" loading="lazy">
+    <div class="text">
+      <p class="eyebrow">About me</p>
+      <h2>From Antioquia to York, and back to Colombian classrooms</h2>
+      <p class="pull">I believe English opens doors, and teachers are the ones who hold them open.</p>
+      <p>I was born and raised in Antioquia and have lived in many corners of Colombia since. Quindío holds a special place in my heart. I'm a first-generation Latina from a low-income family, the youngest of three sisters, and a proud aunt to two nephews and a niece. At home there's also Brownie, the dog who keeps me grounded.</p>
+      <p>I trained as a foreign language teacher at Universidad de Córdoba, where I co-created the English program's first radio show and found my passion for research. Today I go back as a guest lecturer in the MA in English Teaching and I mentor master's students as they finish their theses.</p>
+      <p>Scholarships changed my path. With the U.S. Department of State's Community College Initiative I studied early childhood education in Boston, graduating with a 4.0 GPA. With a Chevening Scholarship I completed an MA in Applied Linguistics for Language Teaching at the University of York, with Distinction. In York I also worked as an English tutor and team leader at York College.</p>
+      <p>Back in Colombia, I coordinate programs where policy meets the classroom. I have led the academic side of Barranquilla's bilingual strategy with the British Council and taught rural communities in the Amazon. I now lead curriculum and instruction at Generation Colombia.</p>
+      <p>I also founded <a href="#empowerthem">EmpowerThem</a>, a grassroots foundation that opens educational doors for young people and women, because I know what one opportunity can do for a family like mine.</p>
+    </div>
+  </div>
+</section>
+
+<!-- NONPROFIT -->
+<section id="empowerthem" class="np">
+  <div class="wrap">
+    <div class="np-grid">
+      <div>
+        <img class="np-logo" src="np-logo.png" alt="EmpowerThem Foundation logo">
+        <div class="sec-head" style="margin-top:18px">
+          <p class="eyebrow" style="color:var(--accent)">My nonprofit · Founder &amp; community leader since 2024</p>
+          <h2>EmpowerThem Foundation</h2>
+          <p>Empower one, empower all. EmpowerThem works in Montería, Córdoba, to expand access to education for children, young people and women through English, mentoring and professional development, in line with UN SDGs 4 and 5.</p>
+          <p>I lead it as a leader for my community, not as a CEO: side by side with volunteers, families and young people, deciding together what the neighborhood needs.</p>
+        </div>
+        <div class="mv">
+          <div><b>Mission</b><p class="muted">Improve the lives of women, children and vulnerable people in Montería through holistic education, gender empowerment, sustainable practices and professional development.</p></div>
+          <div><b>Vision</b><p class="muted">A thriving community where every woman and child has the knowledge, skills and confidence to break the cycle of poverty.</p></div>
+          <div><b>Reach</b><p class="muted">100+ students in workshops on scholarships and global opportunities, plus community art-in-English workshops for children.</p></div>
+        </div>
+      </div>
+      <div>
+        <div class="photos2">
+          <img src="ph-workshop-hands.jpg" alt="Handprint banner with the EmpowerThem logo from a children's workshop" loading="lazy">
+          <img src="ph-workshop-art.jpg" alt="Art-in-English workshop materials on the floor" loading="lazy">
+        </div>
+        <p class="small muted" style="margin-top:8px">Community art-in-English workshop for children, Montería.</p>
+      </div>
+    </div>
+
+    <div class="cards" aria-label="Ways to get involved">
+      <img src="np-card1.png" alt="1. Active volunteering" loading="lazy">
+      <img src="np-card2.png" alt="2. Direct financial support" loading="lazy">
+      <img src="np-card3.png" alt="3. Adopt a project" loading="lazy">
+      <img src="np-card4.png" alt="4. Women's empowerment" loading="lazy">
+      <img src="np-card5.png" alt="5. Personalized English classes" loading="lazy">
+    </div>
+
+    <h3 style="margin-top:44px">Chevening Mentoring Program</h3>
+    <p class="muted" style="max-width:65ch;margin-top:8px">A volunteer program where I guide young Colombians applying to the Chevening Scholarship: group sessions, essay feedback from volunteer reviewers and up to three one-to-one mentoring sessions, with a focus on leadership and giving back.</p>
+    <div class="strip">
+      <figure class="shot"><button data-full="np-mentoria1.jpg" data-cap="Chevening mentoring program: objectives and format."><img src="np-mentoria1.jpg" alt="Mentoring program slide" loading="lazy"></button><figcaption>Program overview</figcaption></figure>
+      <figure class="shot"><button data-full="np-mentoria3.jpg" data-cap="What mentees receive."><img src="np-mentoria3.jpg" alt="What mentees receive slide" loading="lazy"></button><figcaption>What mentees receive</figcaption></figure>
+      <figure class="shot"><button data-full="np-propuesta.jpg" data-cap="EmpowerThem project proposal (cover)."><img src="np-propuesta.jpg" alt="Project proposal cover" loading="lazy"></button><figcaption>Foundation project proposal</figcaption></figure>
+      <figure class="shot"><button data-full="np-roles.jpg" data-cap="Roles and responsibilities manual for the foundation team."><img src="np-roles.jpg" alt="Roles manual excerpt" loading="lazy"></button><figcaption>Roles &amp; responsibilities manual</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Reviews &amp; recommendations</p>
+      <h2>What people say about my work</h2>
+    </div>
+    <div class="quotes">
+      <blockquote>
+        <p>From the outset, Valentina stood out for her charisma, independence of thought and clear vision of English language education as a tool for social mobility.</p>
+        <footer><b>Angel Blanco Sorio</b>Chevening and Political Officer, British Embassy Colombia</footer>
+      </blockquote>
+      <blockquote>
+        <p>She's committed, exceptional, and very passionate about leadership and education. In my time working with her in a very demanding job, she always met her deadlines and showed true interest in public education.</p>
+        <footer><b>Stefani Pacheco</b>EFL teaching and curriculum design professional · LinkedIn, April 2026</footer>
+      </blockquote>
+      <blockquote>
+        <p>Her creativity, relationship-building skills, values, and innovative thinking made her an invaluable team member. Her insights into intercultural communication and education always stood out in our cohort meetings.</p>
+        <footer><b>Juan Camilo Gutiérrez Rodríguez</b>English, Spanish &amp; French teacher; fellow U.S. Department of State grantee · LinkedIn, January 2025</footer>
+      </blockquote>
+      <blockquote>
+        <p>She is one of the most passionate and dedicated educators I've met. Her ability to connect with people from diverse backgrounds and foster meaningful learning experiences is remarkable.</p>
+        <footer><b>Mary Gade</b>Community College Initiative Program colleague · LinkedIn, December 2024</footer>
+      </blockquote>
+      <blockquote>
+        <p>I had the oportunity to lead Valentina through a social project in the colombian Amazon foothill, focused in teaching english to rural children, where I could realized how passionate and commited she is in what she does.</p>
+        <footer><b>Social project lead, Colombian Amazon</b>LinkedIn recommendation</footer>
+      </blockquote>
+      <blockquote>
+        <p>What stands out most about Valentina as a candidate for doctoral research is her intellectual independence and capacity for original analytical thinking.</p>
+        <footer><b>Chris Parkin</b>Academic Skills Tutor, University of York</footer>
+      </blockquote>
+      <blockquote>
+        <p>Throughout her internship, which lasted until December 2022, Valentina demonstrated exceptional skills in leadership, networking, and classroom management. Her ability to connect with students and foster an engaging learning environment was truly commendable.</p>
+        <footer><b>Julio Andrés Rozo</b>Ecosystem Restoration Director, Amazonía Emprende</footer>
+      </blockquote>
+      <blockquote>
+        <p>Her openness to innovation and empowerment will permit her to refine her research, teaching, and leadership skills while growing as a global professional.</p>
+        <footer><b>Pedro P. Aguas, Ph.D.</b>Foreign Language Curriculum Leader, Universidad de Córdoba</footer>
+      </blockquote>
+    </div>
+    <div class="cta"><a class="btn" href="https://www.linkedin.com/in/valentinasanchezorozco/details/recommendations/" target="_blank" rel="noopener">Read all recommendations on LinkedIn</a></div>
+  </div>
+</section>
+
+
+
+<!-- RESUME -->
+<section id="resume" style="background:var(--card);border-block:1px solid var(--line)">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Resume</p>
+      <h2>Experience</h2>
+    </div>
+    <div class="resume">
+      <div>
+        <ol class="tl" reversed>
+          <li><time>Oct 2026 – now</time><div><b>Curriculum &amp; Instruction Coordinator</b><span>Generation Colombia · curriculum design, instructional coaching team, quality standards and AI professional learning</span></div></li>
+          <li><time>Jan – Jul 2026</time><div><b>Academic Coordinator (consultant)</b><span>British Council, with the Barranquilla Secretariat of Education · 15,000 students, 88 educators</span></div></li>
+          <li><time>Aug 2023 – now</time><div><b>Guest Lecturer, Leadership for L2 Teachers</b><span>Universidad de Córdoba · leadership and AI-in-education curriculum; MA thesis mentoring</span></div></li>
+          <li><time>Jan – Jul 2025</time><div><b>English Tutor &amp; Team Leader</b><span>York College · York, UK</span></div></li>
+          <li><time>Apr – Sep 2024</time><div><b>Remote English Teacher</b><span>British Council (English Without Borders) · 200+ public officials</span></div></li>
+          <li><time>Jan 2023 – Apr 2024</time><div><b>English Teacher &amp; Team Leader</b><span>Boston English Experience · 4-teacher team, +30% proficiency</span></div></li>
+          <li><time>Jul – Dec 2022</time><div><b>English Teacher &amp; Community Facilitator</b><span>Amazonía Emprende · +Women+Science+Equity program, Caquetá</span></div></li>
+          <li><time>Jan 2021 – Jul 2022</time><div><b>Remote Business English Instructor</b><span>Coninglés · 100+ professionals</span></div></li>
+          <li><time>Mar – Dec 2020</time><div><b>English Teacher</b><span>ITSA · diagnostic assessments for the UNSTOPPABLE KIDS project</span></div></li>
+          <li><time>Jan – Mar 2020</time><div><b>English Teaching Intern</b><span>JVS Boston · Boston, USA</span></div></li>
+          <li><time>Sep 2019 – Mar 2020</time><div><b>Teacher Assistant &amp; Team Leader</b><span>Jumpstart Boston · Boston, USA</span></div></li>
+        </ol>
+      </div>
+      <div class="side">
+        <div><h3>Education</h3><ul>
+          <li>MA Applied Linguistics for Language Teaching, University of York (Distinction), 2025</li>
+          <li>B.A. Foreign Language Teaching (English), Universidad de Córdoba, 2022 · first-generation graduate</li>
+          <li>Certificate in Early Childhood Education, Bunker Hill Community College (GPA 4.0), 2020</li></ul></div>
+        <div><h3>Scholarships &amp; awards</h3><ul>
+          <li>Chevening Scholarship, UK Government (2024–25)</li>
+          <li>Aspire Leaders Program (2026)</li>
+          <li>Community Engagement Exchange, U.S. Department of State (2023–24)</li>
+          <li>Colfuturo Scholarship (2023)</li>
+          <li>Community College Initiative, U.S. Department of State (2019–20)</li>
+          <li>+Women+Science+Equity National Internship Program (2022)</li></ul></div>
+        <div><h3>Community leadership</h3><ul>
+          <li>Founder, EmpowerThem Foundation (2024 – present)</li>
+          <li>Co-founder &amp; Logistics Manager, Fundación Resiliente Colombia (2020 – 2023)</li></ul></div>
+        <div><h3>Certificates</h3><ul>
+          <li>Google Project Management</li>
+          <li>STEAM &amp; Project Management Diploma, OEI</li>
+          <li>Teaching at the University Level with IT</li>
+          <li>Learning How to Teach Online, UNSW</li>
+          <li>Leaders of Learning, HarvardX</li></ul></div>
+        <div><h3>Languages</h3><ul>
+          <li>Spanish: native</li>
+          <li>English: C1/C2 (TOEFL iBT 97 · Duolingo 135)</li></ul></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Gallery</p>
+      <h2>Moments along the way</h2>
+    </div>
+    <div class="gallery g3">
+      <figure><img src="ph-chevening.jpg" alt="Valentina at Chevening Orientation 2024 in London" loading="lazy"><figcaption>Chevening Orientation, London 2024</figcaption></figure>
+      <figure><img src="ph-chevening-cert.jpg" alt="Valentina holding her Chevening certificate" loading="lazy"><figcaption>Chevening Scholar</figcaption></figure>
+      <figure><img src="ev-embassy24-sign.jpg" alt="Valentina at the British Embassy welcome event for Chevening scholars" loading="lazy"><figcaption>Chevening welcome, British Embassy Bogotá 2024</figcaption></figure>
+      <figure><img src="ev-boston-team.jpg" alt="CCI participants in blue t-shirts doing community service" loading="lazy"><figcaption>Community service, CCI Program</figcaption></figure>
+      <figure><img src="ev-boston-group.jpg" alt="Valentina with friends in Boston" loading="lazy"><figcaption>CCI friends at Bunker Hill, Boston</figcaption></figure>
+      <figure><img src="ev-boston-flag.jpg" alt="CCI students holding the Colombian flag" loading="lazy"><figcaption>Representing Colombia, CCI Program</figcaption></figure>
+    </div>
+    <h3 style="margin-top:44px">Beyond work</h3>
+    <p style="color:var(--muted);margin-top:6px;max-width:60ch">Travel keeps me curious about how people learn, live and speak. A few places that shaped me.</p>
+    <div class="trips">
+      <figure><img src="tr-quindio.jpg" alt="Valentina in a sun hat in Quindío" loading="lazy"><figcaption>Quindío, Colombia</figcaption></figure>
+      <figure><img src="tr-spain-sagrada.jpg" alt="Valentina in front of the Sagrada Família" loading="lazy"><figcaption>Barcelona, Spain</figcaption></figure>
+      <figure><img src="tr-spain-bike.jpg" alt="Valentina with a bicycle on a beach" loading="lazy"><figcaption>Barcelona, Spain</figcaption></figure>
+      <figure><img src="tr-spain-run.jpg" alt="Valentina running a race in Madrid" loading="lazy"><figcaption>Madrid, Spain</figcaption></figure>
+      <figure><img src="tr-mexico-pyramid.jpg" alt="Valentina at the Teotihuacan pyramids" loading="lazy"><figcaption>Teotihuacan, Mexico</figcaption></figure>
+      <figure><img src="tr-mexico-cdmx.jpg" alt="Valentina in Mexico City" loading="lazy"><figcaption>Mexico City, Mexico</figcaption></figure>
+      <figure><img src="tr-chile-market.jpg" alt="Valentina at a market in Santiago" loading="lazy"><figcaption>Santiago, Chile</figcaption></figure>
+      <figure><img src="ph-brownie2.jpg" alt="Brownie, Valentina's dog, smiling" loading="lazy"><figcaption>Brownie, my favorite coworker</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" style="padding-top:0">
+  <div class="wrap">
+    <div class="contact">
+      <div>
+        <p class="eyebrow">Contact</p>
+        <h2 style="margin-top:8px">Let's connect</h2>
+        <p style="margin-top:10px;color:var(--muted)">Open to roles and collaborations in curriculum, teacher development, bilingual policy and AI in education. Full work samples are available on request.</p>
+      </div>
+      <div>
+        <div class="c-row"><code id="mail">vsanchezorozco82@correo.unicordoba.edu.co</code><button class="btn" id="copy" type="button">Copy email</button></div>
+        <p class="small" id="copied" aria-live="polite" style="margin-top:6px"></p>
+        <div class="c-row"><a class="btn primary" href="https://www.linkedin.com/in/valentinasanchezorozco/" target="_blank" rel="noopener">Connect on LinkedIn</a><code>linkedin.com/in/valentinasanchezorozco</code></div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site"><div class="wrap">© 2026 Valentina Sánchez Orozco · Document excerpts are shown with logos removed and personal data hidden.</div></footer>
+
+<dialog id="lb" aria-label="Document excerpt">
+  <button class="x" id="lbx" aria-label="Close">×</button>
+  <img id="lbimg" alt="">
+  <p id="lbcap"></p>
+</dialog>
+
+<script>
+(function(){
+  const lb=document.getElementById('lb'), im=document.getElementById('lbimg'), cap=document.getElementById('lbcap');
+  document.querySelectorAll('.shot button').forEach(b=>b.addEventListener('click',()=>{
+    im.src=b.dataset.full; im.alt=b.querySelector('img').alt; cap.textContent=b.dataset.cap||'';
+    try{lb.showModal()}catch(e){lb.setAttribute('open','')}
+  }));
+  document.getElementById('lbx').addEventListener('click',()=>lb.close());
+  lb.addEventListener('click',e=>{if(e.target===lb) lb.close()});
+  const btn=document.getElementById('copy'), out=document.getElementById('copied'), mail=document.getElementById('mail');
+  btn.addEventListener('click',()=>{
+    const t=mail.textContent;
+    const sel=()=>{const r=document.createRange();r.selectNodeContents(mail);const s=getSelection();s.removeAllRanges();s.addRange(r);out.textContent='Email selected. Press Ctrl/Cmd+C to copy.'};
+    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(()=>{out.textContent='Email copied.'},sel)}else sel();
+  });
+})();
+</script>
+
+</body>
+</html>
